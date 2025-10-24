@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "PomGranet Web to Image Producer",
+  "version": "1.0",
+  "description": "Scrolls, captures, and stitches a full webpage into a single JPEG.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": { // REVERTED: Must be "action" for MV3
+    "default_icon": "icon48.png",
+    "default_title": "Capture Full Page"
+  },
+  "background": {
+    "service_worker": "background.js" // REVERTED: Must be "service_worker" for MV3
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+  // Removed browser_specific_settings as we are focusing on Chrome now.
+}

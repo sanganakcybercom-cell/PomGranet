@@ -1,0 +1,10 @@
+.:
+background.js
+content.js
+icon128.png
+icon16.png
+icon48.png
+lib
+manifest.json
+
+./lib:
